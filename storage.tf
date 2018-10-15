@@ -10,7 +10,7 @@ resource "azurerm_storage_account" "ops_manager_storage_account" {
   name                     = "${var.env_short_name}opsmanager"
   resource_group_name      = "${azurerm_resource_group.pcf_resource_group.name}"
   location                 = "${var.location}"
-  account_tier             = "Premium"
+  account_tier             = "Standard"
   account_replication_type = "LRS"
 }
 
